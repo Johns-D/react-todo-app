@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+}
+
+#root {
+    padding-top: 50px;
+}
+
+.todoapp {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #efefef;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.title {
+    color: #4e4e4e;
+    font-size: 28px;
+    text-align: center;
+}
+
+.add {
+    display: flex;
+    margin-top: 25px;
+}
+
+.add_input {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.3;
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+}
+
+.add_btn,
+.clear_btn {
+    flex: 0 0 auto;
+    background-color: #dddddd;
+    width: 110px;
+    height: 50px;
+    color: #4e4e4e;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #cdcdcd;
+    border-left: none;
+    cursor: pointer;
+}
+
+.add_btn:hover {
+    background-color: #b2ffba;
+}
+
+.clear_btn:hover {
+    background-color: #ffadad;
+}
+
+.list_item {
+    background-color: #dddddd;
+    padding: 0 15px;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.list_item:hover .delete_btn {
+    display: flex;
+}
+
+.list_item:last-child {
+    margin: 25px 0 0 0;
+}
+
+.list_item_text {
+    padding: 15px 0;
+    word-wrap: break-word;
+}
+
+.list_item_meta {
+    display: flex;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.list_item_number,
+.list_item_date {
+    display: flex;
+    align-items: center;
+    color: #858585;
+}
+
+.list_item_number {
+    margin-right: 20px;
+}
+
+.list_item_number svg,
+.list_item_date svg {
+    margin-right: 8px;
+}
+
+.delete_btn {
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 16px;
+    color: #4e4e4e;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
